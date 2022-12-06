@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header><h1 class="font-bold text-center mt-8 text-xl"> personal <span class="text-red-500">Banking</span> file</h1></header>
+    <main>
+        <section class="bg-orange-300 w-1/2 mt-8 mx-auto p-8">
+            <h3 class=" font-bold 
+            pl-2 mb-2 text-2xl mb-4">Plase log in :</h3>
+          <div>
+            <input id="email-input" class="border-4 border-red-700 rounded-lg w-80 block px-4 mb-4" type="email" name="" id="" placeholder="Enter the email">
+          <input id="password-input"  class="border-4 border-red-700 rounded-lg w-80 mt-2 px-4 " type="password" name="" id="" placeholder="Enter the password">
+          
+          <button  id="button-click" class="block border-4 border-red-700 mt-2 rounded-lg w-24"> Submit</button>
+          </div>
+       
+        </section>
+    </main>
+    <Script>
+        // userEmail 
+document.getElementById('button-click').addEventListener('click',function(){
+    const emailInput=document.getElementById('email-input');
+    const userEmail = emailInput.value;
+    // userPassword 
+   const passwordField = document.getElementById('password-input');
+   const userPassword = passwordField.value;
+//    another file open 
+   if(userEmail =='nishat@gmail.com' && userPassword =='nishat'){
+   window.location.href='bank.html'
+   
+   }
+    
+    
+});
+
+
+    </Script>
+    <script src="js/banking.js"></script>
+</body>
+</html>
